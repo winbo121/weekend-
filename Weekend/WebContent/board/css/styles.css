@@ -1,0 +1,861 @@
+/* 
+- The MIT License
+- Copyright (c) 2011 Crafted Pixelz, http://craftedpixelz.co.uk
+- Distributed by http://freehtml5templates.com
+- Modified by Hwang HeeJoung
+*/
+html, body, div, span, h2, h3, h4, h5, h6, p, ol, ul, li, form, label,
+	legend, caption, aside, details, figcaption, figure, footer, header,
+	hgroup, menu, nav, section, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/*뷰포트 변경시 자동으로 폰트 크기 조절 방지*/
+html {
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a img {
+	border: none
+}
+
+aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+	section {
+	display: block
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+
+form {
+	padding-top: 1%;
+	margin-bottom: 3%;
+}
+
+/* layout */
+#wrapper1 {
+	position: relative;
+    width: 100%;
+    margin: 0 auto;
+    top: 80px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+#container{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	background-color: transparent;
+}
+
+.Site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 13.025%;
+	text-align: center;
+	border-bottom: 1px solid #e6e6e6;
+	background: #fff;
+}
+
+.Site-logo {
+	height: 60%;
+	margin-top: 5%;
+}
+
+.Site-logo_link {
+	display: inline-block;
+	position: relative;
+	width: 18.3%;
+	height: 96%;
+	left: 11%;
+	background: url('images/logo_travelweek.jpg') no-repeat 0 50%;
+	background-size: contain;
+}
+.Site-logo_link1
+{
+	display: inline-block;
+	position: relative;
+	width: 18.3%;
+	height: 96%;
+	left: 6.8%;
+	background: url('images/logo_travelweek.jpg') no-repeat 0 50%;
+	background-size: contain;
+}
+
+
+#Boardlabel
+{
+	float: right;
+    font-size: 15px;
+    position: relative;
+    top: 30%;
+    right: 2%;
+}
+
+.Site-logo_text {
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+	clip: rect(0, 0, 0, 0);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+}
+
+.My_sns>svg
+{
+	font-size: 35px;
+	margin-top: 5px;
+}
+
+.New_post
+{
+	/* 팝업창 css */
+	top: 0px;
+	position: absolute;
+	margin-top: -40px;
+	background: white;
+    width: 350px;
+    height: 450px;
+}
+
+#New
+{
+	font-size: 20px;
+    position: relative;
+    top: 22px;
+}
+
+#SNS_title
+{
+	padding-left: 10px;
+    padding-top: 20px;
+    width: 300px;
+}
+
+.file-upload-content {
+	display: none;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    float: left;
+    top: 80px;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+   border: 1px dashed darkgrey;
+    position: absolute;
+    float: left;
+    width: 95%;
+    top: 80px;
+    height: 210px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #fff;
+  border: 2px dashed #D8D8D8;
+}
+
+.image-title-wrap {
+	color: #222;
+    width: 40%;
+    float: right;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  padding: 60px 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.file-upload-image {
+	max-height: 200px;
+    max-width: 350px;
+	margin: auto;
+}
+
+.remove-image {
+  width: 80px;
+  margin: 0;
+  color: #fff;
+  height: 30px;
+  float: right;
+  background: #5858FA;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-weight: 700;
+  position: relative;
+  top: 5px;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.SNS_Msg
+{
+	float: left;
+    width: 95%;
+    position: absolute;
+    top: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Enrollment_close
+{
+	position: absolute;
+    border: none;
+    background: transparent;
+    top: 22px;
+    left: 5px;
+    font-size: 20px;
+}
+.Enrollment_back { /* 팝업 배경 css */
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	display: none;
+	background-color: #000;
+	opacity: 0.8;
+}
+
+#SNS_comment
+{
+	margin-left: 40px;
+}
+
+#heartlist
+{
+	color: #262626;
+	margin-left: 5px;
+    display: inline;
+}
+
+#form1 {
+	float: right;
+    width: 20.6%;
+}
+
+.flBtn button>svg
+{
+	margin-left: -5px;
+}
+
+.Site-footer {
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	text-align: end;
+	position:fixed; 
+}
+
+@media only screen and (min-width: 900px) {
+	.Site-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 500;
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid #e6e6e6;
+		background: #fff;
+	}
+	.Site-logo {
+		height: 50px;
+	}
+	.Site-logo_link {
+		display: inline-block;
+		position: relative;
+		width: 6%;
+		height: 100%;
+		background: url('images/logo_travelweek.jpg') no-repeat 0 50%;
+		background-size: contain;
+		height: 100%;
+	}
+	.Site-logo_text {
+		overflow: hidden;
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		border: 0;
+		white-space: nowrap;
+		clip: rect(0, 0, 0, 0);
+		-webkit-clip-path: inset(50%);
+		clip-path: inset(50%);
+	}
+}
+
+.group2rt {
+	float: right;
+	width: 200px;
+	position: relative;
+	background: transparent;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.group2 {
+	float: left;
+	width: 300px;
+	position: relative;
+	background: transparent;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.group3 {
+	float: left;
+	width: 120px;
+	position: relative;
+	background: transparent;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	display: block;
+	height: 250px;
+}
+
+.group4 {
+	float: left;
+	width: 420px;
+	position: relative;
+	background: transparent;
+	padding: 60px 15px 15px;
+	margin-bottom: 10px;
+}
+
+.newsbox {
+	float: left;
+	width: 425px;
+	position: relative;
+	background: transparent;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+#main {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 40px;
+	overflow: hidden;
+}
+
+@media ( max-width : 900px) {
+	#main {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 2.5%;
+		overflow: hidden;
+	}
+}
+
+#content {
+	float: left;
+	width: 450px;
+}
+
+#sidebar1 {
+	float: left;
+	padding-left: 20px;
+	width: 155px;
+}
+
+#sidebar2 {
+	float: right;
+	padding-right: 15px;
+	width: 155px;
+}
+/* basics */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	clear: both;
+	color: #333;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 1.3;
+	color: #fff;
+	text-transform: none;
+	font-style: bold;
+	text-align: center;
+	margin-top: 7px;
+	padding-bottom: 6px;
+}
+
+h3 {
+	font-size: 16px;
+	line-height: 0.9;
+	text-align: left;
+}
+
+.boardheader {
+	margin-left: 2.5%;
+	top: 15%;
+	position: relative;
+}
+.boardTitle a:link
+{
+	font-size: 14px;
+}
+
+@media ( min-width : 768px) {
+	h3 {
+		font-size: 16px;
+		line-height: 0.9;
+		color: #fff;
+		text-align: left;
+		top: 3%;
+		position: relative;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+h4 {
+	font-size: 23px;
+	line-height: 0.9;
+	color: white;
+	text-align: left;
+	margin-bottom: 12px;
+	padding-bottom: 10px;
+}
+
+a:link, a:visited {
+	color: #4d4d4d;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+a:hover, a:active {
+	color: rgba(5, 171, 224, 1);
+}
+
+p {
+	margin-bottom: 18px;
+}
+
+/************************ Navigation Menu ************************/
+aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+	section {
+	display: block
+}
+
+nav li a:link {
+	color: #191919;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: white;
+}
+
+nav ul li {
+	float: left;
+	line-height: normal;
+	margin-left: 15px;
+	list-style: none;
+}
+
+.clearing {
+	clear: both;
+	display: inline;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+
+/** HEADER */
+header>h1 {
+	float: left;
+	margin: 0 0 18px 10px;
+	width: 600px;
+	font-size: 40px;
+	line-height: 36px;
+}
+
+header>h1 a {
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0px 2px 3px #555;
+}
+
+header>h2 {
+	color: #777;
+	clear: right;
+	float: right;
+	font-style: italic;
+	font-size: 14px;
+	margin: 14px 10px 18px 0;
+}
+
+/** ARTICLES **/
+article img {
+	border: none;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	-moz-box-shadow: 3px 3px 7px #777;
+}
+
+#content div, ul, ol, hr {
+	margin-bottom: 10px;
+}
+
+#content ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+
+#content h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	margin: 0 0 40px 0;
+	line-height: 1.5em;
+}
+
+.alignleft, img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 10px;
+}
+
+.alignright, img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 10px;
+}
+
+.aligncenter, img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignleft, img.alignright, img.aligncenter {
+	margin-bottom: 12px;
+}
+
+/* sidebar and footer widget blocks */
+aside h3 {
+	font-size: 18px;
+	text-shadow: 0px 2px 3px #ddd;
+}
+
+aside ul {
+	list-style: square;
+	color: #aaa;
+	margin: -15px 0 15px 25px;
+}
+
+aside li a {
+	color: #191919;
+	font-size: 10px;
+}
+
+#footer-area {
+	color: #191919;
+	font-size: 80%;
+	padding: 5px 0;
+	margin-left: 100px;
+}
+
+.footer-segment {
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+	width: 190px;
+}
+
+footer aside h4 {
+	color: #191919;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+footer ul {
+	list-style: none;
+	margin: -15px 0;
+}
+
+footer a:link, footer a:visited {
+	color: #ccc;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer p {
+	margin-top: -15px;
+	color: #faf0e6;
+}
+
+/************************ Specifics ************************/
+#title {
+	position: relative;
+	float: left;
+	top: -10px;
+	left: 100px;
+	width: 401px;
+	height: 58px;
+	background-image: url(images/intro.png);
+	margin: 0 auto;
+	display: block;
+	color: #fff;
+}
+
+.yellow {
+	color: #ffff00;
+}
+
+.red {
+	color: #8b0000;
+}
+
+.black {
+	color: #191919;
+}
+
+.m_form input {
+	height: auto;
+	padding: 5px;
+	border-radius: 3px;
+	transition: padding .25s;
+	-moz-transition: padding .25s;
+	-webkit-transition: padding .25s;
+	-ms-transition: padding .25s;
+	-o-transition: padding .25s;
+	background-color: #ffffff;
+	border: 1px solid #555555;
+	box-shadow: 0 0 3px #aaaaaa;
+}
+
+.submit {
+	background-color: #68b12f;
+	border-radius: 5px;
+	top: 22px;
+    position: absolute;
+    right: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	padding: 6px 20px;
+	margin-top: 0.5%;
+	border: 1px solid #5b992b;
+	box-shadow: 0 1px 0px #9fd574 inset;
+	-moz-box-shadow: 0 1px 0px #9fd574 inset;
+	-webkit-box-shadow: 0 1px 0px #9fd574 inset;
+	-ms-box-shadow: 0 1px 0px #9fd574 inset;
+	-o-box-shadow: 0 1px 0px #9fd574 inset;
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 #396715;
+}
+
+/* hover: 嶺뚮씭�쐠占쎈뮡�뜝�럥裕욄뤆�룊�삕 �뜝�럩沅욃뜝�럩�졎嶺뚯쉻�삕 �뜝�럡留믣뜝�럡臾�  active:嶺뚮씭�쐠占쎈뮡�뜝�럥裕욑옙紐닷뜝占� �뜝�럥�뱡占쎈ご占쎈뼬占쏙옙 �뜝�럩肉꿨뜝�럥裕� �뜝�럡留믣뜝�럡臾� 
+link : �뜝�럥由��뜝�럩逾졾뜝�럥�뱺嶺뚮씧�궞野껓옙  visited :�뜝�럩逾졿쾬�꼻�삕 �뜝�럥由썹뵓怨ㅼ삕 �뛾�렮維뽪룇�뜝�럥由� �뜝�럥由��뜝�럩逾졾뜝�럥�뱺嶺뚮씧�궞野껓옙  */
+.submit:hover {
+	opacity: .85; /* �뜝�럩�쐸�뜝�럩�굥�뜝�럥�뱺�뜝�럡�맋 85% �뜝�럩踰믭옙逾놂옙�뜆�벟  */
+	cursor: pointer;
+}
+
+.submit:active {
+	border: 1px solid #28911e;
+	box-shadow: 0 0 10px 5px #356b0b inset;
+	-moz-box-shadow: 0 0 10px 5px #356b0b inset;
+	-webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+	-ms-box-shadow: 0 0 10px 5px #356b0b inset;
+	-o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+/* extra by dinfree */
+.right {
+	position: static;
+	text-align: right;
+}
+
+.reply {
+	border: 1px solid #28911e;
+	width: 99.5%;
+	padding: 5px 20px;
+	background: #FFFFE0;
+}
+
+.reply a {
+	font-size: 8px;
+	color: #333;
+	margin: 0 0 1px;
+	height: 100%;
+}
+
+.Good
+{
+	margin-top: 20px;
+}
+
+.Good_div
+{
+	margin-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.Write_div
+{
+	padding-left: 16px;
+    padding-right: 16px;
+}
+
+.Good a
+{
+	font-size: 16px;
+}
+.delete
+{
+	float: right;
+}
+
+.heart {
+  width: 75px;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 5px;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+.Msg {
+	width: 90%;
+	z-index: 7;
+	top: 0px;
+	margin: 0;
+    position: absolute;
+    height: 500px;
+    display: none; 
+}
+.Msg div
+{
+	top: 50px;
+    position: relative;
+}
+
+.Chatclose {
+	position: absolute;
+    z-index: 1;
+    border: none;
+    background: transparent;
+    top: 95px;
+    left: 345px;
+    font-size: 15px;
+}
+
+.Chat_back {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 7;
+	top: 0px;
+	left: 0px;
+	display: none;
+	background-color: #000;
+	opacity: 0.8;
+}
+
+.notes {
+	overflow: hidden;
+	height: 250px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	font-family: Arial, Helvetica, Sans-serif;
+}
+
+.message {
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+	overflow: auto;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+
+#messageText {
+	width: 76.5%;
+}
+
+.Sendmessage {
+	width: 100%;
+	margin-top: -3.5%;
+	margin-bottom: 7%;
+}
